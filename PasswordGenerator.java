@@ -2,12 +2,11 @@ import java.security.*;
 
 public class PasswordGenerator {
 
-    private static final String UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    private static final String LOWER = "abcdefghijklmnopqrstuvwxyz";
-    private static final String DIGITS = "0123456789";
-    private static final String SPECIAL = "!@#$%^&*()-_=+[]{}|;:'\",.<>/?";
-
-    public static String generatePassword(int length) {
+     static String UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     static String LOWER = "abcdefghijklmnopqrstuvwxyz";
+     static String DIGITS = "0123456789";
+     static String SPECIAL = "!@#$%^&*()-_=+[]{}|;:'\",.<>/?";
+     static String generatePassword(int length) {
         if (length <= 0) {
             throw new IllegalArgumentException("Password length must be greater than 0");
         }
